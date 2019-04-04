@@ -1,1 +1,56 @@
 /* Acá va tu código */
+.todo{ background-color: #66cdd3; text-align: center; }
+.paginaUno{
+  text-align: center;  
+ } 
+.cuadroText3{
+   resize: none;
+  margin-left:800px; 
+  margin-right:50px;
+   margin-top:-410px;
+  margin-bottom: 0px;
+   
+}
+.offsettext2{
+   margin-left:800px; 
+  margin-right:50px;
+}
+
+
+.cuadroText1{
+ resize: none;
+ margin-top:50px;
+  margin-left:50px; 
+  margin-right:850px; 
+   } 
+.offset{
+   margin-left:50px; 
+  margin-right:850px;
+  
+}
+.offsetbarra{
+   margin-left:50px; 
+  margin-right:850px;
+}
+
+.botoncifrar{
+   margin-left:50px; 
+  margin-right:850px;
+  
+}
+.textarea2{
+    margin-left:50px; 
+  margin-right:850px;
+  
+}
+.offsetcuadro2{
+  margin-left:50px; 
+  margin-right:800px;
+  
+}
+.offsettextdes{
+
+    margin-left:800px; 
+    margin-right:50px;
+
+}

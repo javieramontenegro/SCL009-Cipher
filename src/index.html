@@ -6,9 +6,60 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div id="root">
-      <h1>Hola mundo!</h1>
+     <div class= "todo">
+    <div class= "paginaUno">
+    <h1>mensaje secreto para fans</h1>
+      <h2>Decifra tu mensaje</h2>
+    
+       <!-- cuadro de texto input -->
+      <div class="cuadroText1">
+      <textarea id="input" rows="10" cols="50" placeholder="Esribe tu mensaje aquí para poder cifrarlo"></textarea>
+      </div> 
+    <!-- offset cifrar palabra -->
+       <div class= "offset">
+       <p> offset </p>
     </div>
+      <!-- offset cifrar cuadro -->
+       <div class= "offsetbarra">
+       <input type="number"  id="offsetcifrado" required ><br>
+          </div>
+  <!-- boton cifrar -->
+       <div class= "botoncifrar">
+        <button id="cifrar" >cifrar </button>   <br> 
+    </div>
+   <!-- textarea output cifrar -->
+       <div class= "textarea2">
+       <textarea id="output" rows="10" cols="50"></textarea>
+  </div>
+       </div>
+     <!-- DESCIFRAR -->
+    
+    <!-- textarea input decifrar -->
+    <div class="cuadroText3">
+      <textarea id="inputdescifrar" rows="10" cols="50" placeholder="Inserta tu mesaje para descifrarlo "></textarea>
+      </div> 
+   <!-- ofsset descifrar palabra -->
+   <div class="offsettextdes">
+    <p> offset </p> 
+     </div>
+   <!-- offset cuadro -->
+   <div class="offsetcuadrodes">
+    <input type="number"  id="offsetdescifrado" required ><br>
+     </div>
+   <!-- boton descifrar -->
+    <div class="botondes">
+    <input type="button" class="button" value="descifrar" onclick="descifrar()"><br>
+      </div>
+    <!-- textarea output descifrar -->
+   <div class="outputdes">
+    <textarea id="desoutput" rows="10" cols="50"></textarea>
+   </div>
+  
+    
+    
+    </div> 
+   
+    
     <script src="cipher.js"></script>
     <script src="index.js"></script>
   </body>
