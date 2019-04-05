@@ -4,57 +4,81 @@
     <meta charset="utf-8">
     <title>Caesar Cipher</title>
     <link rel="stylesheet" href="style.css" />
+    <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Baloo+Chettan" rel="stylesheet">
+ 
+ 
+ 
   </head>
   <body>
      <div class= "todo">
-    <div class= "paginaUno">
-    <h1>mensaje secreto para fans</h1>
-      <h2>Decifra tu mensaje</h2>
-    
+    <div class="titulo">       
+    <h1>Mensaje secreto para fans</h1>
+  </div>
+    <div class="mensajedecifra">
+    <h2>Decifra tu mensaje</h2>
+  </div>
+   <!-- imagen chen -->
+   <img src="https://i.pinimg.com/564x/0b/65/38/0b6538d8bb724bc371d2f6902164b520.jpg" alt="chen" class="chen">  
+
+
+
+  <div class="mensajedifra">
+    <h2>Cifra tu mensaje para que nadie lo vea!</h2>
+  </div>
+
        <!-- cuadro de texto input -->
       <div class="cuadroText1">
-      <textarea id="input" rows="10" cols="50" placeholder="Esribe tu mensaje aquí para poder cifrarlo"></textarea>
+      <textarea id="input" rows="5" cols="35" placeholder="Esribe tu mensaje aquí para poder cifrarlo" style="font-family:'Pacifico', cursive;font-size: 20px;"></textarea>
       </div> 
-    <!-- offset cifrar palabra -->
+    <!-- cuadro color input -->
+   <div class="cuadro" >      </div>
+      <!-- offset cifrar palabra -->
        <div class= "offset">
-       <p> offset </p>
+       <p> Clave </p>
     </div>
       <!-- offset cifrar cuadro -->
        <div class= "offsetbarra">
-       <input type="number"  id="offsetcifrado" required ><br>
+       <input type="number"  id="offsetcifrado"   style="font-family: 'Pacifico', cursive;" required ><br>
           </div>
   <!-- boton cifrar -->
-       <div class= "botoncifrar">
-        <button id="cifrar" >cifrar </button>   <br> 
+       <div >
+        <button  class= "botoncifrar" id="cifrar" >cifrar </button>   <br> 
     </div>
    <!-- textarea output cifrar -->
        <div class= "textarea2">
-       <textarea id="output" rows="10" cols="50"></textarea>
+       <textarea id="output" rows="5" cols="35" style="font-family:'Pacifico', cursive;font-size: 20px;"></textarea>
   </div>
-       </div>
+        <!-- cuadro color output -->
+   <div class="cuadro3" >      </div>
      <!-- DESCIFRAR -->
     
     <!-- textarea input decifrar -->
     <div class="cuadroText3">
-      <textarea id="inputdescifrar" rows="10" cols="50" placeholder="Inserta tu mesaje para descifrarlo "></textarea>
+      <textarea id="inputdescifrar" rows="5" cols="35" placeholder="Inserta tu mesaje para descifrarlo " style="font-family:'Pacifico', cursive;font-size: 20px;" ></textarea>
       </div> 
-   <!-- ofsset descifrar palabra -->
+    <!-- cuadro color input -->
+    <div class="cuadro2" >      </div>
+  
+  
+      <!-- ofsset descifrar palabra -->
    <div class="offsettextdes">
-    <p> offset </p> 
+    <p> Clave </p> 
      </div>
    <!-- offset cuadro -->
    <div class="offsetcuadrodes">
-    <input type="number"  id="offsetdescifrado" required ><br>
+    <input type="number"  id="offsetdescifrado"   style="font-family: 'Pacifico', cursive;"  required ><br>
      </div>
    <!-- boton descifrar -->
-    <div class="botondes">
-    <input type="button" class="button" value="descifrar" onclick="descifrar()"><br>
+    <div >
+      <button  class="botondes"    id="descifrar" >descifrar </button>   <br>
       </div>
     <!-- textarea output descifrar -->
    <div class="outputdes">
-    <textarea id="desoutput" rows="10" cols="50"></textarea>
+    <textarea id="desoutput" rows="5" cols="35" style="font-family:'Pacifico', cursive;font-size: 20px;"></textarea>
    </div>
-  
+  <!-- cuadro color outputdes -->
+  <div class="cuadro4" >      </div>
     
     
     </div> 

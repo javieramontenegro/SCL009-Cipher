@@ -1,56 +1,192 @@
 /* Acá va tu código */
-.todo{ background-color: #66cdd3; text-align: center; }
-.paginaUno{
-  text-align: center;  
- } 
+
+body{
+
+  background-image: url(https://i.pinimg.com/564x/e4/50/eb/e450eb70b3b3274b4d0363006c64943c.jpg);
+}
+
+
+
+
+.titulo{
+  position: relative;
+  left:350px;
+  font-family: 'Pacifico', cursive;
+  font-size: 30px;
+}
+.mensajedecifra{
+  font-family: 'Baloo Chettan', cursive;
+  position: relative;
+  left:900px;
+  top:40px;
+}
+.mensajedifra{
+  font-family: 'Baloo Chettan', cursive;
+  position: relative;
+  left:80px;
+  top:-15px;
+
+}
+
+
+
+
 .cuadroText3{
    resize: none;
-  margin-left:800px; 
-  margin-right:50px;
-   margin-top:-410px;
-  margin-bottom: 0px;
+   position: relative;
+   z-index:1;
+    top:-510px;
+    left:800px; 
    
 }
-.offsettext2{
-   margin-left:800px; 
-  margin-right:50px;
+.offsettextdes{
+  position: relative;
+   z-index:0;
+    top:-470px;
+    left:850px; 
+    font-family: 'Baloo Chettan', cursive;
+    font-size: 20px;
 }
 
 
 .cuadroText1{
  resize: none;
- margin-top:50px;
-  margin-left:50px; 
-  margin-right:850px; 
+ position: relative;
+ z-index:1;
+  top:20px;
+  left:100px; 
+  font-family: 'Pacifico', cursive;
+  font-size: 12px;
    } 
+  
 .offset{
-   margin-left:50px; 
-  margin-right:850px;
+  position:relative;
+  left:130px;
+  top: 50px;
+  font-family: 'Baloo Chettan', cursive;
+  font-size: 20px;
   
 }
 .offsetbarra{
-   margin-left:50px; 
-  margin-right:850px;
+  position:relative;
+  left:200px;
+  top: 5px;
 }
 
 .botoncifrar{
-   margin-left:50px; 
-  margin-right:850px;
+  position:relative;
+  left:240px;
+  top: 25px;
+  background-color: #aa1111;
+  border-radius: 10px;
+  color: #ffffff;
+  padding: 10px 15px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 24px;
+  font-family: 'Baloo Chettan', cursive;
   
+  cursor: pointer;
 }
 .textarea2{
-    margin-left:50px; 
-  margin-right:850px;
+  resize: none;
+  position: relative;
+  z-index:1;
+   top:85px;
+   left:100px; 
   
 }
-.offsetcuadro2{
-  margin-left:50px; 
-  margin-right:800px;
-  
-}
-.offsettextdes{
 
-    margin-left:800px; 
-    margin-right:50px;
+
+.offsetcuadrodes{
+  position: relative;
+  z-index:0;
+   top:-524px;
+   left:920px; 
+
+}
+.botondes{
+  position: relative;
+  z-index:0;
+   top:-505px;
+   left:920px; 
+   background-color: #aa1111;
+  border-radius: 10px;
+  color: #ffffff;
+  padding: 10px 15px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 24px;
+  font-family: 'Baloo Chettan', cursive;
+
+}
+.outputdes{
+  position: relative;
+  z-index:1;
+   top:-445px;
+   left:800px; 
+
+}
+.cuadro{
+  position:absolute;
+  z-index:0;
+  top:300px;
+  left:95px;
+  background-color: #AD7685;
+  width: 405px;
+  height: 180px;
+  border: 15px solid #AD7685;
+  padding:0px;
+  border-radius: 15px;
+}
+
+.cuadro2{
+  position:absolute;
+  z-index:0;
+  top:300px;
+  left:795px;
+  background-color: #AD7685;
+  width: 405px;
+  height: 180px;
+  border: 15px solid #AD7685;
+  padding:0px;
+  border-radius: 15px;
+}
+
+.cuadro3{
+  position:absolute;
+  z-index:0;
+  top:705px;
+  left:95px;
+  background-color: #AD7685;
+  width: 405px;
+  height: 180px;
+  border: 15px solid #AD7685;
+  padding:0px;
+  border-radius: 15px;
+}
+
+.cuadro4{
+  position:absolute;
+  z-index:0;
+  top:705px;
+  left:795px;
+  background-color: #AD7685;
+  width: 405px;
+  height: 180px;
+  border: 15px solid #AD7685;
+  padding:0px;
+  border-radius: 15px;
+}
+.chen{
+  position: absolute;
+  width: 150px;
+  height: 200px;
+  top:10px;
+  z-index:0;
+
+
 
 }
