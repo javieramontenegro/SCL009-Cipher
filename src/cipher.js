@@ -18,10 +18,13 @@ window.cipher = {
         output += String.fromCharCode((ascii - 97 + n) % 26 + 97);
 }
    
-   //ESPACIO Y LO DEMAS
- else {output+= input.charAt(i)};
+   //ESPACIO 
+ // else {output+= input.charAt(i)};
+   else if (ascii == 32){ 
+    let n= parseInt(offset); 
+    output +=  String.fromCharCode((ascii - 32 + n) % 1 + 32);  }
    
-    }
+}
 
  return output;
    
@@ -40,9 +43,13 @@ window.cipher = {
       let n= parseInt((26-offset)%26);
       outputdes += String.fromCharCode((ascii - 97 + n) % 26 + 97);
 }
+ // ESPACIO
+ //else {outputdes+= input.charAt(i)};
+ else if (ascii == 32){ 
+  let n= parseInt((26-offset)%26); 
+  outputdes +=  String.fromCharCode((ascii - 32 + n) % 1 + 32);  }
  
- else {outputdes+= input.charAt(i)};
- }
+}
 return outputdes;
 
 }
