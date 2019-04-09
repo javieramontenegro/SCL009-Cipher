@@ -17,13 +17,20 @@ window.cipher = {
         let n= parseInt(offset);
         output += String.fromCharCode((ascii - 97 + n) % 26 + 97);
 }
-   
-   //ESPACIO 
- // else {output+= input.charAt(i)};
-   else if (ascii == 32){ 
-    let n= parseInt(offset); 
-    output +=  String.fromCharCode((ascii - 32 + n) % 1 + 32);  }
-   
+   // Ñ
+else if (ascii==209){
+  let n= parseInt(offset);
+  output +=String.fromCharCode((ascii - 209 + n) % 26 + 209);
+
+} 
+
+// ñ
+else if (ascii==241){
+  let n= parseInt(offset);
+  output +=String.fromCharCode((ascii - 241 + n) % 26 + 241);}
+//ESPACIO Y DEMAS 
+  else {output+= input.charAt(i)}
+ 
 }
 
  return output;
@@ -43,11 +50,28 @@ window.cipher = {
       let n= parseInt((26-offset)%26);
       outputdes += String.fromCharCode((ascii - 97 + n) % 26 + 97);
 }
- // ESPACIO
- //else {outputdes+= input.charAt(i)};
- else if (ascii == 32){ 
-  let n= parseInt((26-offset)%26); 
-  outputdes +=  String.fromCharCode((ascii - 32 + n) % 1 + 32);  }
+
+
+     // Ñ
+else if (ascii >=209 && ascii<= 234){
+  
+  outputdes +=String.fromCharCode(209);
+
+} 
+ // ñ
+ else if (ascii >=241 && ascii<= 266){
+ 
+ outputdes +=String.fromCharCode(241);
+
+} 
+   
+
+
+
+
+// ESPACIO
+ else {outputdes+= input.charAt(i)}
+
  
 }
 return outputdes;

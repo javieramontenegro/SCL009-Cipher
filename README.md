@@ -1,11 +1,18 @@
 # Proyecto cipher: Mensaje secreto para fans
-El proyecto consiste en crear una pagina donde exsista la posiblidad de poder ingresar un mensaje con una clave (offset) determinado y obtener ese mensaje codificado, de tal forma que solo la persona sabe lo que escribio u otra persona que obtenga la misma clave.
+El proyecto consiste en crear una página donde exista la posiblidad de poder ingresar un mensaje con una clave (offset) determinado y obtener ese mensaje codificado, de tal forma que solo la persona sabe lo que escribio u otra persona que obtenga la misma clave.
 Tomé lo ultimo dicho y lo use como mi principal idea, ademas sumandole mis gustos personales para poder crear este codificador pensado en las fans del kpop .
 ## Mensaje secreto para fans
-Día a dia los idols intentan ser mas cercanos a sus fans mediante las redes sosciales, principalmente instagram donde miles de ellos tienen cuenta. Las fans no tienen tapujos en demostrarles su amor.Así que esta aplicacion ayuda a eso, a poder desahogarte sin verguenza y poder expresar todo lo que sientes, sin que nadie mas lo sepa, y sentirte bien solo con el hecho de que le mandaste un mensaje. 
+Día a dia los idols intentan ser mas cercanos a sus fans mediante las redes sociales, principalmente instagram donde miles de ellos tienen cuenta. Las fans no tienen tapujos en demostrarles su amor.Así que esta aplicacion ayuda a eso, a poder desahogarte sin verguenza y poder expresar todo lo que sientes, sin que nadie mas lo sepa, y sentirte bien solo con el hecho de que le mandaste un mensaje. 
 ## Principales usuarios
 A pesar de que hay fans de todo tipo de edad, princpipalmente el rango abarca desde los 8 a 15 años. Niñas preadolecentes que quieran dejar en secreto todo lo que sienten por sus grupos y expresar sin miedo sus sentimientos.
 ## Prototipo
+
+
+![prototipo](src/img/prot1.jpg)
+prototipo en papel para ver ubicación de cada objeto.
+
+![prototipo2](src/img/prot_2.jpg)
+prototipo 2 para ver colores y tipografía.
 
 
 
