@@ -1,100 +1,165 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="utf-8">
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Caesar Cipher</title>
     <link rel="stylesheet" href="style.css" />
     <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Baloo+Chettan" rel="stylesheet">
- 
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
  
  
   </head>
   <body>
-     <div class= "todo">
-    <div class="titulo" >       
+    <div class="container">
+    <section>
+        <div class="row justify-content-end">
+           
+            <div class="col-2 col-sm-2 col-md-2 col-lg-2 col-xl-2"></div>
+              <div class="col-8 col-sm-8 col-md-8 col-lg-8 col-xl-8">
+                 <img src="img/logo_cipher.png" alt="logo" class="logo">
+             </div>
+             <div class="col-2 col-sm-2 col-md-2 col-lg-2 col-xl-2"></div>
+        </div>
+    </section>
     
-  </div>
-    <div class="mensajedecifra">
-    <h2>Decifra tu mensaje</h2>
-  </div>
+   
+
+    <section>
+        <div class="row justify-content-center">
+            <div class="col-5 col-sm-4 col-md-4 col-lg-4 col-xl-4 mensajedifra">
+                <p>Cifra tu mensaje para que nadie lo vea!</p>
+             </div>
+            <div class="col-2 col-sm-2 col-md-2 col-lg-3 col-xl-4"></div>
+             <div class="col-5 col-sm-4 col-md-4 col-lg-4 col-xl-4 mensajedecifra">
+                  <p>Decifra tu mensaje</p>
+              </div>
+          </div>
+    </section>
+   <!-- text area cifrar -->
+   <section>
+        <div class="row  justify-content-center">
+             <div class="col-5 col-sm-4 col-md-4 col-lg-5 col-xl-4 cuadroText1">
+                <textarea id="input" placeholder="Esribe tu mensaje aquí para poder cifrarlo" style="font-family:'Pacifico', cursive;font-size: 20px;"></textarea>
+             </div>
+      <!-- espacio -->
+      <div class="col-2 col-sm-2 col-md-2 col-lg-2 col-xl-4"></div>
+             <!-- text area descifrar -->
+             <div class="col-5 col-sm-4 col-md-4 col-lg-5 col-xl-4 cuadroText3">
+                <textarea id="inputdescifrar" placeholder="Inserta tu mensaje para descifrarlo " style="font-family:'Pacifico', cursive;font-size: 20px;" ></textarea>
+             </div>
+        </div>
+   </section>
+   
+   <section>
+        <div class="row justify-content-end">
+           <!-- offset cifrar palabra -->
+             <div class="col-5 col-sm-4 col-md-4 col-lg-4 col-xl-4 offset">
+                <h1> Clave </h1>
+                 <!-- offset cifrar cuadro -->
+                  <input type="number"  id="offsetcifrado"   style="font-family: 'Pacifico', cursive;" required >
+                  <img src="img/chen.png" alt="chenrecuerda" class="chenrecuerda">   
+               </div>
+            <!-- espacio -->
+            <div class="col-2 col-sm-2 col-md-2 col-lg-3 col-xl-4"></div>
+             <!-- offset descifrar palabra -->
+              <div class="col-5 col-sm-4 col-md-4 col-lg-4 col-xl-4 offset">
+                  <h1> Clave </h1>
+                  <input type="number"  id="offsetdescifrado"   style="font-family: 'Pacifico', cursive;"  required >
+                 
+                </div>
+        </div>
+   </section>
+   
+<!-- BOTONES -->
+   <section>
+         <div class="row justify-content-end buttons">
+              <div class="col-5 col-sm-4 col-md-4 col-lg-4 col-xl-4">
+                  <button  class= "botoncifrar" id="cifrar" >cifrar </button>
+                   
+              </div>
+               <div class="col-2 col-sm-2 col-md-2 col-lg-3 col-xl-4"></div>
+              <div class="col-5 col-sm-4 col-md-4 col-lg-4 col-xl-4">
+                  <button  class="botondes"    id="descifrar" >descifrar </button> 
+              </div>
+         </div>
+   </section>
+
+ <!-- RESPONSES -->
+ 
+ <section>
+       <div class="row">
+             <div class="col-5 col-sm-4 col-md-4 col-lg-4 col-xl-4 textarea2">
+                    <textarea id="output" rows="5" cols="35" style="font-family:'Pacifico', cursive;font-size: 20px;"></textarea>
+             </div>
+                   <div class="col-2 col-sm-2 col-md-2 col-lg-3 col-xl-4 outputdes">
+                     
+                   </div>  
+              <div class="col-5 col-sm-4 col-md-4 col-lg-4 col-xl-4 textarea2">
+                  <textarea id="desoutput" rows="5" cols="35" style="font-family:'Pacifico', cursive;font-size: 20px;"></textarea>
+              </div>
+       </div>
+ </section>
+ 
+<section>
+      <div class="row">
+          <div class="col-6 col-sm-12 col-md-12 col-lg-12 col-xl-6">
+              <img src="img/do.png" alt="do" class="do">
+          </div>
+          <div class="col-6 col-sm-12 col-md-12 col-lg-12 col-xl-6 wiki">
+              <a  href="http://en.wikipedia.org/wiki/Caesar_cipher">AQUÍ</a>
+             <img src="img/chan.png" alt="chen" class="chen">
+          </div>
+      </div>
+</section>
+
+ 
+ 
    <!-- IMAGENES/DIBUJOS -->
-   <img src="img/chan.png" alt="chen" class="chen">  
-   <img src="img/logo_cipher.png" alt="logo" class="logo"> 
-   <img src="img/chen.png" alt="chenrecuerda" class="chenrecuerda">  
-    <img src="img/do.png" alt="do" class="do">
-<!-- link wikipedia -->
-   <div id="wiki">
-   <a  href="http://en.wikipedia.org/wiki/Caesar_cipher">AQUÍ</a>
-  </div>
+   
+    
+   
+   
+
 <!-- link artstation -->
    <div id="art">
    <a  href="https://www.artstation.com/jumpygames">AQUÍ</a>
   </div>
 
 
-  <div class="mensajedifra">
-    <h2>Cifra tu mensaje para que nadie lo vea!</h2>
-  </div>
+ 
 
-       <!-- cuadro de texto input -->
-      <div class="cuadroText1">
-      <textarea id="input" rows="5" cols="35" placeholder="Esribe tu mensaje aquí para poder cifrarlo" style="font-family:'Pacifico', cursive;font-size: 20px;"></textarea>
-      </div> 
-    <!-- cuadro color input -->
-   <div class="cuadro" >      </div>
-      <!-- offset cifrar palabra -->
-       <div class= "offset">
-       <p> Clave </p>
-    </div>
-      <!-- offset cifrar cuadro -->
-       <div class= "offsetbarra">
-       <input type="number"  id="offsetcifrado"   style="font-family: 'Pacifico', cursive;" required ><br>
-          </div>
-  <!-- boton cifrar -->
-       <div >
-        <button  class= "botoncifrar" id="cifrar" >cifrar </button>   <br> 
-    </div>
-   <!-- textarea output cifrar -->
-       <div class= "textarea2">
-       <textarea id="output" rows="5" cols="35" style="font-family:'Pacifico', cursive;font-size: 20px;"></textarea>
-  </div>
-        <!-- cuadro color output -->
-   <div class="cuadro3" >      </div>
+      
+   
+     
+     
+         
+   
+   
+  
+       
      <!-- DESCIFRAR -->
     
-    <!-- textarea input decifrar -->
-    <div class="cuadroText3">
-      <textarea id="inputdescifrar" rows="5" cols="35" placeholder="Inserta tu mensaje para descifrarlo " style="font-family:'Pacifico', cursive;font-size: 20px;" ></textarea>
-      </div> 
-    <!-- cuadro color input -->
-    <div class="cuadro2" >      </div>
-  
-  
-      <!-- ofsset descifrar palabra -->
-   <div class="offsettextdes">
-    <p> Clave </p> 
-     </div>
-   <!-- offset cuadro -->
-   <div class="offsetcuadrodes">
-    <input type="number"  id="offsetdescifrado"   style="font-family: 'Pacifico', cursive;"  required ><br>
-     </div>
-   <!-- boton descifrar -->
-    <div >
-      <button  class="botondes"    id="descifrar" >descifrar </button>   <br>
-      </div>
-    <!-- textarea output descifrar -->
-   <div class="outputdes">
-    <textarea id="desoutput" rows="5" cols="35" style="font-family:'Pacifico', cursive;font-size: 20px;"></textarea>
-   </div>
-  <!-- cuadro color outputdes -->
-  <div class="cuadro4" >      </div>
-    
-    
-    </div> 
    
+   
+  
+  
+     
+  
+  
+  
+ 
     
+    
+</div>
+   
+ 
     <script src="cipher.js"></script>
     <script src="index.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
   </body>
 </html>

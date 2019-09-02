@@ -1,82 +1,93 @@
 /* Acá va tu código */
 
 body{
-
-  background-image: url(https://i.pinimg.com/564x/e4/50/eb/e450eb70b3b3274b4d0363006c64943c.jpg);
+/* width: 40%; */
+  background: url(https://i.pinimg.com/564x/e4/50/eb/e450eb70b3b3274b4d0363006c64943c.jpg)50% 100% fixed;
+}
+.logo{
+ width: 100%;
+  z-index:0;
+ /*  top:-10px;
+  left:260px; */
 }
 
 
 
 
-.titulo{
-  position: relative;
-  left:350px;
-  font-family: 'Pacifico', cursive;
-  font-size: 30px;
-}
-.mensajedecifra{
+.mensajedecifra p{
   font-family: 'Baloo Chettan', cursive;
-  position: relative;
-  left:900px;
-  top:225px;
+font-size: 2rem;
+  /* left:900px;
+  top:225px; */
 }
-.mensajedifra{
+.mensajedifra p{
   font-family: 'Baloo Chettan', cursive;
-  position: relative;
-  left:80px;
-  top:170px;
+  font-size: 2rem;
+ 
+ 
+ 
+ /*  left:80px;
+  top:170px; */
 
 }
+.cuadroText1 textarea,.cuadroText3 textarea,.textarea2 textarea,.outputdes textarea{
+  margin-top: 1rem;
+  resize: none;
+  position: relative;
+  z-index:1;
+  width: 100%;
+  min-height: 10rem;
+   /* top:185px;
+   left:100px;  */
+   font-family: 'Pacifico', cursive;
+   font-size: 12px;
+    } 
+input{
+  width: 30%;
+  min-height: 1rem;
+}
 
-
-
+.offset h1{
+  width: 10%;
+  font-family: 'Baloo Chettan', cursive;
+  font-size: 2rem;
+  margin:0 !important;
+  margin-block-start:0 !important;
+    margin-block-end:0 !important;
+    margin-inline-start:0 !important;
+    margin-inline-end: 0 !important;
+}
+.buttons{
+  margin-top: 2rem;
+}
 
 .cuadroText3{
    resize: none;
    position: relative;
    z-index:1;
-    top:-340px;
-    left:800px; 
+   /*  top:-340px;
+    left:800px;  */
    
 }
 .offsettextdes{
   position: relative;
    z-index:0;
-    top:-280px;
-    left:850px; 
+   /*  top:-280px;
+    left:850px; */ 
     font-family: 'Baloo Chettan', cursive;
     font-size: 20px;
 }
 
 
-.cuadroText1{
- resize: none;
- position: relative;
- z-index:1;
-  top:185px;
-  left:100px; 
-  font-family: 'Pacifico', cursive;
-  font-size: 12px;
-   } 
+
   
-.offset{
-  position:relative;
-  left:130px;
-  top: 250px;
-  font-family: 'Baloo Chettan', cursive;
-  font-size: 20px;
-  
-}
-.offsetbarra{
-  position:relative;
-  left:200px;
-  top: 200px;
-}
+
+
 
 .botoncifrar{
   position:relative;
-  left:240px;
-  top: 220px;
+  /* left:240px;
+  top: 220px; */
   background-color:#ff447c;
   border-radius: 10px;
   color: #ffffff;
@@ -89,28 +100,21 @@ body{
   
   cursor: pointer;
 }
-.textarea2{
-  resize: none;
-  position: relative;
-  z-index:1;
-   top:250px;
-   left:100px; 
-  
-}
+
 
 
 .offsetcuadrodes{
   position: relative;
   z-index:0;
-   top:-330px;
-   left:920px; 
+  /*  top:-330px;
+   left:920px; */ 
 
 }
 .botondes{
   position: relative;
   z-index:0;
-   top:-310px;
-   left:920px; 
+  /*  top:-310px;
+   left:920px; */ 
    background-color:#ff447c;
   border-radius: 10px;
   color: #ffffff;
@@ -125,15 +129,15 @@ body{
 .outputdes{
   position: relative;
   z-index:1;
-   top:-280px;
+ /*   top:-280px;
    left:800px; 
-
+ */
 }
 .cuadro{
   position:absolute;
   z-index:0;
-  top:300px;
-  left:95px;
+  /* top:300px;
+  left:95px; */
   background-color: #805E67;
   width: 405px;
   height: 180px;
@@ -142,75 +146,102 @@ body{
   border-radius: 15px;
 }
 
-.cuadro2{
-  position:absolute;
-  z-index:0;
-  top:300px;
-  left:795px;
-  background-color: #805E67;
-  width: 405px;
-  height: 180px;
-  border: 15px solid #805E67;
-  padding:0px;
-  border-radius: 15px;
-}
 
-.cuadro3{
-  position:absolute;
-  z-index:0;
-  top:705px;
-  left:95px;
-  background-color: #805E67;
-  width: 405px;
-  height: 180px;
-  border: 15px solid #805E67;
-  padding:0px;
-  border-radius: 15px;
-}
 
-.cuadro4{
-  position:absolute;
-  z-index:0;
-  top:705px;
-  left:795px;
-  background-color: #805E67;
-  width: 405px;
-  height: 180px;
-  border: 15px solid #805E67;
-  padding:0px;
-  border-radius: 15px;
-}
+
+
 .chen{
   position: absolute;
- left:600px;
-  top:1000px;
+/*  left:600px;
+  top:1000px; */
   z-index:0;
+  width: 100%;
 }
-.logo{
-  position: absolute;
-  z-index:0;
-  top:-10px;
-  left:260px;
-}
+
 .chenrecuerda{
   position: absolute;
   z-index:0;
-  top:520px;
-  left:400px;
+  width:100%;
+  margin-top: -3rem;
+  /* top:520px;
+  left:400px; */
 }
-#wiki{
-top: 1090px;
-left: 710px;
+.wiki a{
+/* top: 1090px;
+left: 710px; */
+z-index:1;
 position: absolute;
+margin-left: 10rem;
+margin-top: 8rem;
 }
 .do{
   position: absolute;
- left:200px;
-  top:1100px;
+  width: 100%;
+/*  left:200px;
+  top:1100px; */
   z-index:0;
+  
 }
 #art{
-  top: 1175px;
-  left: 355px;
+  /* top: 1175px;
+  left: 355px; */
   position: absolute;
   }
+ 
+  @media (max-width: 770px) {
+    .mensajedecifra p{
+      font-family: 'Baloo Chettan', cursive;
+     font-size: 1rem;
+      /* left:900px;
+      top:225px; */
+    }
+    .mensajedifra p{
+      font-family: 'Baloo Chettan', cursive;
+      font-size: 1rem;
+  }
+  .cuadroText1 textarea,.cuadroText3 textarea,.textarea2 textarea,.outputdes textarea{
+    resize: none;
+    position: relative;
+    z-index:1;
+    width: 100%;
+    min-height: 8rem;
+     /* top:185px;
+     left:100px;  */
+     font-family: 'Pacifico', cursive;
+     font-size: 4rem;
+      } 
+      .offset h1{
+        width: 10%;
+        font-family: 'Baloo Chettan', cursive;
+        font-size: 1rem;
+        margin:0 !important;
+        margin-block-start:0 !important;
+          margin-block-end:0 !important;
+          margin-inline-start:0 !important;
+          margin-inline-end: 0 !important;
+      }
+      .botoncifrar,.botondes{
+        position:relative;
+        /* left:240px;
+        top: 220px; */
+        background-color:#ff447c;
+        border-radius: 10px;
+        color: #ffffff;
+        padding: 10px 15px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 15px;
+        font-family: 'Baloo Chettan', cursive;
+        
+        cursor: pointer;
+      }
+      .chenrecuerda{
+        position: absolute;
+        z-index:0;
+        width:100%;
+        margin-top: -0.5rem;
+        /* top:520px;
+        left:400px; */
+      }
+   }
